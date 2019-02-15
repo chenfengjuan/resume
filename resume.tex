@@ -1,108 +1,77 @@
-% !TEX TS-program = xelatex
-% !TEX encoding = UTF-8 Unicode
-% !Mode:: "TeX:UTF-8"
+% !TEX program = xelatex
+
 \documentclass{resume}
-\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 %\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
-\usepackage{linespacing_fix} % disable extra space before next section
-\usepackage{cite}
-\usepackage{geometry}   %设置页边距的宏包
-%\usepackage{titlesec}   %设置页眉页脚的宏包
 
-\usepackage{fancyhdr}
-% \pagestyle{fancy}
-
-\usepackage{graphicx}
-\usepackage{multicol}
-\usepackage{multirow}
-\usepackage{tabu}
-\geometry{top = 2.5cm}
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\Large{
-  \begin{tabu}{ c l r }
-   \multirow{5}{1in}{\includegraphics[width=0.88in]{chen}} & \scshape{陈凤娟} & \\%& \pbar{Python}{0.75} \\
-    & \email{cfj1601175228@163.com} & \pbar{React}{0.6} \\
-    & \phone{(+86) 15821579606} & \pbar{Vue}{0.8} \\
-    & \linkedin [segmentfault/陈凤娟]{https://segmentfault.com/u/chenfengjuan_59eadc7bee8f8} & \pbar{D3}{0.6} \\
-    & \github[github.com/chenfengjuan]{https://github.com/chenfengjuan} & \pbar{Javascript}{0.8}
-  \end{tabu}
-}
+\name{Bin Yuan}
 
-\normalsize
-\section{\faInfo\  求职意向}
-\datedsubsection{\textbf{ 高级前端开发工程师}, 全职, 北京}{}
-\textit{月薪22K-25K}\ 半个月到岗1
+\basicInfo{
+  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
+  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
+  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
 
-\section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{华中科技大学}, 软件工程, 软件学院}{2011.9-2015.6}
+\section{\faGraduationCap\ Education}
+\datedsubsection{\textbf{Shanghai Jiao Tong University (SJTU)}, Shanghai, China}{2013 -- Present}
+\textit{Master student} in Electronics Engineering (EE), expected March 2016
+\datedsubsection{\textbf{Xidian University}, Shaanxi, China}{2009 -- 2013}
+\textit{B.S.} in Electronics Engineering (EE)
 
-\section{\faUsers\ 项目经历}
-\datedsubsection{\textbf{BI商务智能系统}}{上海景栗科技有限公司, 2017.4-2018.1}
-\begin{onehalfspacing}
-实现了面向特定用户的\textbf{可定制敏捷数据可视化分析平台}，支持业务人员进行自助式探索分析，支持参考线、下钻、联动、表计算等强大分析功能，为\textbf{企业级大数据分析}量身打造
+\section{\faUsers\ Experience}
+\datedsubsection{\textbf{FLAG Inc.} California, America}{2012 -- Present}
+\role{Summer Intern}{Manager: xxx}
+Brief introduction: xxx.
 \begin{itemize}
-\item 在\textit{saiku}开源代码上的前端重构， 增加仪表盘、数据卡片、数据源等模块;
-\item 丰富的仪表盘功能: 静态、动态文本，全局过滤器，图片，多种类型图表等;
-\item 可视化图表: 基于\textit{D3.js}和\textit{ECharts.js}的多种可视化图表;
-\item 前端性能优化: 首页加载，数据缓存等的优化;
-\item 基于openRefine的后台，实现对数据的导入，清理过滤的功能
+  \item Implemented xxx feature
+  \item Optimized xxx 5\%
+  \item xxx
 \end{itemize}
-\end{onehalfspacing}
 
-\datedsubsection{\textbf{SASS系统}}{上海景栗科技有限公司, 2016.10--2017.3}
-\begin{onehalfspacing}
-开发了基于\textit{\textbf{react}}的SASS系统的部分模块, 实现了\textbf{微信群运营和监控系统}的前端开发，该系统用于中小型企业微信社群的运营。
-
+\datedsubsection{\textbf{xxx Projects}}{Jan. 2015 -- Present}
+\role{C, Python, Django, Linux}{Individual Projects, collaborated with xxx}
+Brief introduction: xxx
 \begin{itemize}
-  \item 基于\textit{D3}和\textit{g-cloud}词云算法的文本可视化;
-  \item 基于\textit{jquery}和\textit{react}的群管理、微任务管理和朋友圈投放管理模块的前端开发
+  \item Implemented xxx feature
+  \item Optimized xxx 5\%
+  \item xxx
 \end{itemize}
-\end{onehalfspacing}
 
-\datedsubsection{\textbf{软件开发工程师}}{上海海隆软件有限公司, 2015.9-2016.9}
-\begin{onehalfspacing}
-日本花旗银行系统的维护和更新
+\datedsubsection{\textbf{\LaTeX\ résumé template}}{May. 2015 -- Present}
+\role{\LaTeX, Maintainer}{Individual Projects}
+An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
 \begin{itemize}
-  \item 概要设计书、详细设计书、单元测试报告等的编写和维护
-  \item 子系统项目的前端开发
+  \item Easy to be further customized or extended
+  \item Full support for unicode characters (e.g. CJK) with \XeLaTeX\
+  \item FontAwesome 4.5.0 support
 \end{itemize}
-\end{onehalfspacing}
 
-\section{\faCogs\ IT 技能}
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\ Skills}
 \begin{itemize}[parsep=0.5ex]
-  \item 熟练使用\textit{react, backbone}等框架;
-  \item 熟练使用\textit{D3.js}和\textit{ECharts.js};
-  \item 熟悉\textit{git}协同工作;
-  \item 熟悉\textit{webpack、grunt}等构建工具;
-  \item 了解\textit{mocha、should、karma}的前端单元测试技术;
-  \item 了解\textit{travis-ci、coveralls.io}做CI测试;
-  \item 了解\textit{mondrian}的\textit{schema}和MDX
+  \item Programming Languages: C == Python > C++ > Java
+  \item Platform: Linux
+  \item Development: Web, xxx
 \end{itemize}
 
-% \section{\faHeartO\ 荣誉奖励}
-% \begin{onehalfspacing}
-% \begin{multicols}{2}
-% \begin{itemize}
-%     \item \datedline{\textit{清华之友-金立学业一等奖学金}}{2016年}
-%     \item \datedline{\textit{综合优秀三等奖学金},清华大学}{2016年}
-%     \item \datedline{\textit{美国大学生数学建模大赛三等奖}}{2013年}
-%     \item \datedline{\textit{国家实用新型专利}}{2013年}
-%     \item \datedline{\textit{国家奖学金},华中科技大学}{2014年}
-%     \item \datedline{\textit{校三好学生},华中科技大学}{2014/2012年}
-%     \item \datedline{\textit{学习优胜奖},华中科技大学}{2014/2013/2012年}
-%     \item \datedline{\textit{2013学年大学生科技创新活动优秀个人}}{}
-% \end{itemize}
-% \end{multicols}
-% \end{onehalfspacing}
+\section{\faHeartO\ Honors and Awards}
+\datedline{\textit{\nth{1} Prize}, Award on xxx }{Jun. 2013}
+\datedline{Other awards}{2015}
 
-% \section{\faInfo\ 其他}
-% % increase linespacing [parsep=0.5ex]
-% \begin{itemize}[parsep=0.5ex]
-%   \item 语言: 英语 - CET-6,具备阅读文献、简单交流能力
-%   \item 社工: 班级助理(2012-2014)-组织参加义工活动
-% \end{itemize}
+\section{\faInfo\ Miscellaneous}
+\begin{itemize}[parsep=0.5ex]
+  \item Blog: http://your.blog.me
+  \item GitHub: https://github.com/username
+  \item Languages: English - Fluent, Mandarin - Native speaker
+\end{itemize}
 
 %% Reference
 %\newpage
