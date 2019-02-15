@@ -120,3 +120,9 @@
   {\par \textit{#1} ~ #2 \par}
   \vspace{0.85ex}
 }
+
+% defines progress bar with text
+% usage: \pbar[3][width]{Text}{percentage}
+\newcommand{\pbar}[3][10em]{{#2}\ 
+  \progressbar[heightr=1, width=#1, borderwidth=0pt, roundnessr=0.45, filledcolor=green!40, subdivisions=1]{#3}
+}
