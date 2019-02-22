@@ -1,0 +1,202 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+\usepackage{geometry}   %设置页边距的宏包
+%\usepackage{titlesec}   %设置页眉页脚的宏包
+
+\usepackage{fancyhdr}
+% \pagestyle{fancy}
+
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{tabu}
+\usepackage{progressbar}
+\geometry{top = 2.5cm}
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\Large{
+  \begin{tabu}{ l l r r }
+    & \scshape{陈凤娟} & \multirow{5}{4in}{ } & \\
+    & \email{cfj1601175228@163.com} & \pbar{Vue~}{0.9} \\
+    & \phone{(+86) 15821579606} & \pbar{React~}{0.6} \\
+    & \linkedin [segmentfault/陈凤娟]{https://segmentfault.com/u/chenfengjuan_59eadc7bee8f8} & \pbar{Javascript~}{0.9} \\
+    & \github[github.com/chenfengjuan]{https://github.com/chenfengjuan} & \pbar{D3~}{0.7}
+  \end{tabu}
+}
+
+\normalsize
+\section{\faInfo\  求职意向}
+\datedsubsection{\textbf{ 高级前端开发工程师}, 全职, 北京}{}
+\textit{月薪25K左右}\ 半个月到岗
+
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{华中科技大学}, 软件工程, 软件学院}{2011.9-2015.6}
+
+
+\section{\faGraduationCap\  工作经历}
+
+\datedsubsection{\textbf{           人人车}, 高级前端开发工程师}{2018.4 - 至  今}
+\begin{onehalfspacing}
+\begin{itemize}
+  \item 大数据方向前端团队\textbf{负责人}，负责整个大数据的前端开发；
+  \item 主要负责开发 BI报表平台（PC和APP）、实时计算、即席查询等项目；
+  \item 以及大数据方向产品前端（包含日志采集、元数据管理、ETL等项目）的需求评审、任务划分、排期、进度跟踪、跨团队沟通、项目的各环境部署和上线等；
+  \item 参与公司前端基础物料的开发与维护、文档编写；
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{上海景栗科技有限公司}, 前端开发工程师}{2016.9-2018.3}
+\begin{onehalfspacing}
+\begin{itemize}
+  \item 负责BI大数据系统的前端开发和交互设计；
+  \item 学习大数据相关产品知识，和团队一起完善BI项目，为公司的各部门运营提供便捷的周报日报，统计分析工具；
+  \item 参与公司微信社群的运营的SASS系统部分模块的前端开发；
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{上海海隆软件有限公司}, 软件开发工程师}{2015.7-2016.9}
+\begin{onehalfspacing}
+负责日本花旗银行系统的维护和更新，以及子项目的前端开发。
+\end{onehalfspacing}
+
+\section{\faUsers\ 开源项目}
+
+\datedsubsection{\textbf{瓦力(\linkedin [官网]{http://walle-web.io})}}{前端, 2018.9-至今}
+\begin{onehalfspacing}
+\textbf{开源中国GVP项目，github star 7k，使用企业800+。}
+
+一个高体验，高颜值的\textbf{开源上线部署系统}。瓦力让用户的代码发布终于可以不只能选择\textit{jenkins}。
+
+% \textit{Walle}是一个高体验，高颜值的\textbf{开源上线部署系统}，支持自由配置项目，支持git、多用户、多语言、多项目、多环境同时部署。
+% 支持各种web、php、java、python、go等代码的发布、回滚可以通过web来一键完成。
+
+
+\section{\faUsers\ 项目经历}
+
+\datedsubsection{\textbf{BI 报表平台}}{人人车, 2018.4-至今}
+\begin{onehalfspacing}
+BI 报表平台实现了从\textbf{数据接入整合，到数据处理、分析、挖掘，再到多终端可视化}，对数据进行全价值链管理的一站式\textbf{数据管理和分析}平台。
+
+
+亿条数据秒级响应，二十几种酷炫的可视化图表可供选择，移动和PC同步显示。
+
+\textbf{技术栈：}Vue, VueRouter, Vuex, D3.js, ZRender.js, ElementUI, Sass, Eslint, StyleLint, Codemirror
+\begin{itemize}
+  \item 基于\textit{D3}、\textit{ZRender}、和\textit{Vue}实现的支持\textit{svg}和\textit{canvas}两种模式的\textbf{图表库};
+  \item 图表编辑: 任意纬度的拖拽数据、排序、聚合、高级计算等\textbf{数据可视化}分析功能，公式编辑计算字段、全局筛滤器、图内筛选器、图表配置等功能;
+  \item 权限管理: 对目录、工作表、仪表盘、图表、字段的读写权限管理;
+  \item 工作表: 对内部数据和外部导入数据的简单可视化处理、SQL编辑创建合表;
+  \item 移动端: 移动端仪表盘和图表的展示、图表的全局过滤和简单交互功能;
+  \item 仪表盘: 包含仪表盘和图表的权限控制、添加图表、图表的拖拽布局等;
+\end{itemize}
+\end{onehalfspacing}
+
+% \datedsubsection{\textbf{实时计算}}{人人车, 2018.8-至今}
+% \begin{onehalfspacing}
+% 实时计算平台（RTP）是一套基于\textit{Apache Spark Streaming}构建的\textbf{高性能实时大数据处理平台}，主要针对\textbf{流式数据处理}场景。
+
+
+% \textbf{技术栈：}Vue, VueRouter, Vuex, D3.js, ElementUI, Sass, Eslint, StyleLint, Codemirror
+% \begin{itemize}
+%   \item 开发: 基于\textit{codemirror}实现的\textit{SQL}编辑作业的高亮、撤销、恢复、查找、代码检查等功能，支持调试、调参、版本管理、回滚、对比等功能，支持\textit{UDF}、\textit{UDAF}、\textit{UDTF}的创建编辑和配置使用等功能;
+%   \item 运维: 在线运维，监控作业运行状态的运行曲线，查看作业参数，展示作业SQL的血缘关系图;
+% \end{itemize}
+% \end{onehalfspacing}
+
+% \datedsubsection{\textbf{即席查询}}{人人车, 2018.9-至今}
+% \begin{onehalfspacing}
+% 即席查询平台是一个自助取数平台，支持用户根据自己的需求，编写对应的\textit{sql}查询语句，交由系统执行最终生成查询结果。
+% 满足用户随机性，多发性的查询需求；对用户查询进行权限控制；对用户维度和数据表维度查询的详细信息监控。
+% \end{onehalfspacing}
+
+% \datedsubsection{\textbf{数据采集}}{人人车, 2018.11-至今}
+% \begin{onehalfspacing}
+% 数据采集平台是对数据采集到输出和同步的过程规范化，简洁化，流程化的管理平台。
+% \end{onehalfspacing}
+
+% \datedsubsection{\textbf{ETL}}{人人车, 2019.1-至今}
+% \begin{onehalfspacing}
+% ETL是人人车大数据系统的完整数流程中的重要一环，ETL从多样的异构数据源中抽取到原始数据层后进行清洗、转换、集成，最后加载到数据仓库中，成为数据分析、数据挖掘的基础。
+% ETL平台具备离线数据计算能力，以及周期调度能力，以实现不同数据源的跨平台整合。
+% \end{onehalfspacing}
+
+% \datedsubsection{\textbf{人人车中台物料系统}}{人人车, 2018.11-至今}
+% \begin{onehalfspacing}
+% \textbf{人人车 VUE 中台最佳实践}，效率提升百分百。基于 ElementUI 继续向上构建，提炼出典型模板/业务组件和区块等的物料系统。
+
+
+% \textbf{技术栈：}Anne, Vue, ElementUI, Sass, Eslint, StyleLint
+% \begin{itemize}
+%   \item 负责表格相关的9个区块、拖拽相关的3个区块、tab模式筛选2个区块等区块功能开发;
+%   \item 负责部分组件的基于ElementUI继续向上构建和维护; 负责物料系统的部分稳定编写;
+% \end{itemize}
+% \end{onehalfspacing}
+
+
+\datedsubsection{\textbf{BI商务智能系统}}{上海景栗科技有限公司, 2017.4-2018.1}
+\begin{onehalfspacing}
+实现了面向特定用户的\textbf{可定制敏捷数据可视化分析平台}，支持业务人员进行自助式探索分析，支持参考线、下钻、联动、表计算等强大分析功能，为\textbf{企业级大数据分析}量身打造
+
+
+\textbf{技术栈：} Backbone, Echarts.js, D3.js, grunt
+\begin{itemize}
+  \item 在\textit{saiku}开源代码上的前端重构， 增加仪表盘、数据卡片、数据源等模块;
+  \item 丰富的仪表盘功能: 静态、动态文本，全局过滤器，图片，多种类型图表等;
+  \item 可视化图表: 基于\textit{D3.js}和\textit{Echarts.js}的多种可视化图表;
+  \item 前端性能优化: 首页加载，数据缓存等的优化;
+  % \item 基于\textit{openRefine}的后台，实现对数据的导入，清理过滤的功能;
+\end{itemize}
+\end{onehalfspacing}
+
+% \datedsubsection{\textbf{SASS系统}}{上海景栗科技有限公司, 2016.10--2017.3}
+% \begin{onehalfspacing}
+% 开发了基于\textit{\textbf{react}}的SASS系统的部分模块, 实现了\textbf{微信群运营和监控系统}的前端开发，该系统用于中小型企业微信社群的运营。
+
+
+% \textbf{技术栈：} React, Webpack, D3.js, JQuery
+% \begin{itemize}
+%   \item 基于\textit{D3}和\textit{g-cloud}词云算法的文本可视化;
+%   \item 基于\textit{JQuery}和\textit{React}的群管理、微任务管理和朋友圈投放管理模块的前端开发
+% \end{itemize}
+% \end{onehalfspacing}
+
+% \datedsubsection{\textbf{软件开发工程师}}{上海海隆软件有限公司, 2015.9-2016.9}
+% \begin{onehalfspacing}
+% 日本花旗银行系统的维护和更新
+% \begin{itemize}
+%   \item 概要设计书、详细设计书、单元测试报告等的编写和维护
+%   \item 子系统项目的前端开发
+% \end{itemize}
+% \end{onehalfspacing}
+
+\section{\faCogs\ IT 技能}
+\begin{itemize}[parsep=0.5ex]
+  \item 熟练使用\textit{react, vue}等框架;
+  \item 熟练使用\textit{D3.js}和\textit{ECharts.js}和\textit{ZRender};
+  \item 熟悉\textit{git}协同工作;
+  \item 熟悉\textit{webpack、grunt}等构建工具;
+  \item 了解\textit{mocha、should、karma}的前端单元测试技术;
+  \item 了解\textit{travis-ci、coveralls.io}做CI测试;
+\end{itemize}
+
+\section{\faInfo\  2018总结}
+\begin{itemize}
+  \item 参与Walle开源项目的前端开发与运营；
+  \item 在公司内部做过3次分享（D3入门、swagger推广、vue数据双向绑定源码分析）；
+  \item 发布8篇技术博客；
+\end{itemize}
+
+\section{\faInfo\  自我评价}
+\begin{itemize}
+  \item 积极主动，有极强的执行力、自我驱动力；
+  \item 做事稳重有条理，有担当，有能力；
+\end{itemize}
+
+\end{document}
